@@ -18,7 +18,7 @@ function Create() {
 
             setIsPending(true);
 
-            fetch("http://localhost:8000/blogs", {
+            fetch("http://localhost/phpmyadmin/index.php?route=/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(blog),

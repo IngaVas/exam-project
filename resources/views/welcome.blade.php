@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- React root DOM -->
-    <div id="user">
+    <div id="create">
     </div>
     <!-- React JS -->
     <script src="{{ asset('js/app.js') }}" defer></script>

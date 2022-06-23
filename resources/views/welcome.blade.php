@@ -3,15 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
+    <title>Egzaminas</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    
     <!-- React root DOM -->
-    <div id="user">
+    <div id='login'>
     </div>
     <!-- React JS -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <?php
+            if(DB::connection()->getPdo())
+            {
+                echo "Successfully connected to the database => "
+                             .DB::connection()->getDatabaseName();
+            }
+        ?>
 </body>
 </html>

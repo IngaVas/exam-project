@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 function User() {
+
     return (
         <div className="container mt-5">
             <div className="row justify-content-center">
